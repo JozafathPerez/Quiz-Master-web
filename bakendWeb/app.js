@@ -13,7 +13,7 @@ app.use('/api/history', historyRouter);
 
 // Ruta para la raíz
 app.get('/', (req, res) => {
-  res.send('Bienvenido al backend de Quiz Master');
+  res.send('Bienvenidos al backend de Quiz Master');
 });
 
 const PORT = 5000;
