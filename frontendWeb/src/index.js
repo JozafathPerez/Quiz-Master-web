@@ -1,5 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';  
 import App from './App';
+import './styles/main.css'; 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+// Obtén el elemento root en el DOM
+const rootElement = document.getElementById('root');
+
+// Usa createRoot para inicializar la aplicación
+const root = createRoot(rootElement);
+root.render(<App />);

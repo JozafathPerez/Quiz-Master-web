@@ -1,35 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import StartGame from './components/StartGame';
-import Game from './components/Game';
+import Question from './components/Question';
 import Results from './components/Results';
 import History from './components/History';
 
-const App = () => {
-  const [playerName, setPlayerName] = useState('');
-  const [gameStarted, setGameStarted] = useState(false);
-  const [gameEnded, setGameEnded] = useState(false);
-  const [score, setScore] = useState(0);
-
-  const startGame = () => {
-    setGameStarted(true);
-    setGameEnded(false);
-    setScore(0);
-  };
-
-  const endGame = (finalScore) => {
-    setGameStarted(false);
-    setGameEnded(true);
-    setScore(finalScore);
-  };
-
+function App() {
   return (
-    <div>
-      {!gameStarted && !gameEnded && <StartGame setPlayerName={setPlayerName} startGame={startGame} />}
-      {gameStarted && !gameEnded && <Game playerName={playerName} endGame={endGame} />}
-      {!gameStarted && gameEnded && <Results score={score} playerName={playerName} />}
-      <History />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<StartGame />} />
+        <Route path="/question" element={<Question />} />
+        <Route path="/results" element={<Results />} />
+        <Route path="/history" element={<History />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
