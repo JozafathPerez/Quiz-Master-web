@@ -108,5 +108,156 @@
     "question": "¿Qué continente tiene el mayor número de países?",
     "options": ["África", "Asia", "Europa"],
     "answer": "África"
+  },
+  {
+    "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+    "options": ["Hierro", "Aluminio", "Cobre"],
+    "answer": "Aluminio"
+  },
+  {
+    "question": "¿Cuál es el número atómico del helio?",
+    "options": ["1", "2", "3"],
+    "answer": "2"
+  },
+  {
+    "question": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": ["1912", "1914", "1918"],
+    "answer": "1914"
+  },
+  {
+    "question": "¿Qué planeta es conocido como el Planeta Rojo?",
+    "options": ["Venus", "Marte", "Júpiter"],
+    "answer": "Marte"
+  },
+  {
+    "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "options": ["Thomas Jefferson", "George Washington", "Abraham Lincoln"],
+    "answer": "George Washington"
+  },
+  {
+    "question": "¿Cuál es el país con la mayor población del mundo?",
+    "options": ["India", "Estados Unidos", "China"],
+    "answer": "China"
+  },
+  {
+    "question": "¿Qué órgano del cuerpo humano consume más energía?",
+    "options": ["Corazón", "Hígado", "Cerebro"],
+    "answer": "Cerebro"
+  },
+  {
+    "question": "¿Qué escritor es conocido como el Bardo de Avon?",
+    "options": ["Geoffrey Chaucer", "William Shakespeare", "John Milton"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "question": "¿Qué instrumento mide la presión atmosférica?",
+    "options": ["Barómetro", "Higrómetro", "Termómetro"],
+    "answer": "Barómetro"
+  },
+  {
+    "question": "¿Cuál es el país más pequeño del mundo por superficie?",
+    "options": ["Mónaco", "Ciudad del Vaticano", "Nauru"],
+    "answer": "Ciudad del Vaticano"
+  },
+  {
+    "question": "¿Cuál es el símbolo químico del oro?",
+    "options": ["Au", "Ag", "Gd"],
+    "answer": "Au"
+  },
+  {
+    "question": "¿Qué científico propuso la teoría de la relatividad?",
+    "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein"],
+    "answer": "Albert Einstein"
+  },
+  {
+    "question": "¿Qué tipo de animal es un koala?",
+    "options": ["Marsupial", "Mamífero", "Reptil"],
+    "answer": "Marsupial"
+  },
+  {
+    "question": "¿Cuál es la obra más famosa de Miguel de Cervantes?",
+    "options": ["Don Quijote de la Mancha", "La Celestina", "El Lazarillo de Tormes"],
+    "answer": "Don Quijote de la Mancha"
+  },
+  {
+    "question": "¿Qué país es conocido como la tierra del sol naciente?",
+    "options": ["Corea del Sur", "China", "Japón"],
+    "answer": "Japón"
+  },
+  {
+    "question": "¿Qué gas se libera durante la fotosíntesis?",
+    "options": ["Oxígeno", "Dióxido de carbono", "Nitrógeno"],
+    "answer": "Oxígeno"
+  },
+  {
+    "question": "¿Cuál es el nombre del barco en el que viajó Charles Darwin en su expedición?",
+    "options": ["HMS Victory", "HMS Beagle", "HMS Endeavour"],
+    "answer": "HMS Beagle"
+  },
+  {
+    "question": "¿Cuál es la montaña más alta del mundo?",
+    "options": ["Monte Kilimanjaro", "Monte Everest", "K2"],
+    "answer": "Monte Everest"
+  },
+  {
+    "question": "¿Qué instrumento musical tiene cuerdas y se toca con un arco?",
+    "options": ["Piano", "Violín", "Trombón"],
+    "answer": "Violín"
+  },
+  {
+    "question": "¿En qué ciudad se encuentra la Torre Eiffel?",
+    "options": ["Londres", "Roma", "París"],
+    "answer": "París"
+  },
+  {
+    "question": "¿Qué deporte se juega en Wimbledon?",
+    "options": ["Fútbol", "Tenis", "Críquet"],
+    "answer": "Tenis"
+  },
+  {
+    "question": "¿Qué sustancia da color a la piel humana?",
+    "options": ["Colágeno", "Melanina", "Hemoglobina"],
+    "answer": "Melanina"
+  },
+  {
+    "question": "¿Cuál es la capital de Argentina?",
+    "options": ["Buenos Aires", "Lima", "Santiago"],
+    "answer": "Buenos Aires"
+  },
+  {
+    "question": "¿Quién es el autor de 'La Odisea'?",
+    "options": ["Sófocles", "Homero", "Aristóteles"],
+    "answer": "Homero"
+  },
+  {
+    "question": "¿Qué país es famoso por la torre inclinada de Pisa?",
+    "options": ["España", "Francia", "Italia"],
+    "answer": "Italia"
+  },
+  {
+    "question": "¿Qué animal es el símbolo nacional de Estados Unidos?",
+    "options": ["Águila calva", "Oso grizzly", "Búfalo"],
+    "answer": "Águila calva"
+  },
+  {
+    "question": "¿Qué vitamina es producida por el cuerpo humano cuando se expone al sol?",
+    "options": ["Vitamina A", "Vitamina D", "Vitamina C"],
+    "answer": "Vitamina D"
+  },
+  {
+    "question": "¿Qué planeta tiene un día más largo que su año?",
+    "options": ["Mercurio", "Venus", "Saturno"],
+    "answer": "Venus"
+  },
+  {
+    "question": "¿Cuál es el país más grande de América del Sur?",
+    "options": ["Argentina", "Brasil", "Perú"],
+    "answer": "Brasil"
+  },
+  {
+    "question": "¿Qué gas es responsable del efecto invernadero?",
+    "options": ["Oxígeno", "Dióxido de carbono", "Hidrógeno"],
+    "answer": "Dióxido de carbono"
   }
 ]
+  
