@@ -7,9 +7,9 @@ function StartGame() {
   const navigate = useNavigate();
 
   const startGame = () => {
-    if (playerName.trim()) {
+    if (playerName.trim()) { // Verifica si el nombre del jugador no está vacío
       localStorage.setItem('playerName', playerName);
-      navigate('/question');
+      navigate('/question'); // Navega a la página de preguntas
     } else {
       setError('Por favor, ingresa tu nombre antes de comenzar.');
     }

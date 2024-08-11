@@ -4,18 +4,18 @@ import { useNavigate } from 'react-router-dom';
 function Results() {
   const [playerName] = useState(localStorage.getItem('playerName'));
   const [score] = useState(Number(localStorage.getItem('score')));
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState(''); // Estado para el mensaje de estado (ganaste/perdiste)
   const navigate = useNavigate();
 
   useEffect(() => {
     const saveResults = async () => {
-      const result = { playerName, score };
+      const result = { playerName, score }; // Crea un objeto con el nombre del jugador y la puntuación
       await fetch('http://localhost:5000/api/game/results', {
-        method: 'POST',
+        method: 'POST', // Método HTTP POST para enviar los resultados
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json', // Especifica el tipo de contenido como JSON
         },
-        body: JSON.stringify(result),
+        body: JSON.stringify(result), // Convierte el objeto de resultados a una cadena JSON
       });
       setStatus(score >= 6 ? '¡Ganaste!' : 'Perdiste. Inténtalo de nuevo.');
     };

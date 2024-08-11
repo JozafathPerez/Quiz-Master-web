@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Question() {
-  const [questions, setQuestions] = useState([]);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [isCorrect, setIsCorrect] = useState(null);
+  const [questions, setQuestions] = useState([]); // Estado para almacenar las preguntas
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); // Estado para el índice de la pregunta actual
+  const [score, setScore] = useState(0); // Estado para la puntuación del usuario
+  const [selectedAnswer, setSelectedAnswer] = useState(null); // Estado para la respuesta seleccionada
+  const [isCorrect, setIsCorrect] = useState(null); // Estado para indicar si la respuesta es correcta o no
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/game/questions')
+    fetch('http://localhost:5000/api/game/questions') // Realiza una solicitud GET a la API para obtener las preguntas
       .then((res) => res.json())
       .then((data) => setQuestions(data));
   }, []);
@@ -18,18 +18,19 @@ function Question() {
   const handleAnswer = (answer) => {
     const correctAnswer = questions[currentQuestionIndex].answer;
     setSelectedAnswer(answer);
-    setIsCorrect(answer === correctAnswer);
+    setIsCorrect(answer === correctAnswer); // Actualiza el estado para indicar si la respuesta es correcta
 
     if (answer === correctAnswer) {
-      setScore(score + 1);
+      setScore(score + 1); // Incrementa la puntuación si la respuesta es correcta
     }
 
+    // Espera un segundo antes de pasar a la siguiente pregunta
     setTimeout(() => {
       if (currentQuestionIndex + 1 < questions.length) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
-        localStorage.setItem('score', score);
-        navigate('/results');
+        localStorage.setItem('score', score); // Guarda la puntuación en el almacenamiento local
+        navigate('/results'); // Navega a la página de resultados
       }
       setSelectedAnswer(null); 
       setIsCorrect(null); 

@@ -5,8 +5,9 @@ function History() {
   const [history, setHistory] = useState([]);
   const navigate = useNavigate();
 
+  // useEffect para obtener el historial de resultados al montar el componente
   useEffect(() => {
-    fetch('http://localhost:5000/api/history')
+    fetch('http://localhost:5000/api/history') // Realiza una solicitud GET a la API para obtener el historial
       .then((res) => res.json())
       .then((data) => setHistory(data));
   }, []);
